@@ -1,38 +1,29 @@
-.App {
-  text-align: center;
+#App {
+    position: absolute;
+    width: 70%;
+    background-color: aqua;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    padding: 2%;
+}
+#clear, #divide, #multiply, #zero, #one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #subtract, #add, #equals, #decimal,#display{
+    border: 2px solid aqua ;
+    background-color: rgb(231, 166, 233);
+    color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#display{
+    border: 2px solid aqua;
+    background-color: white;
+    color: black;
+    font-size: large;
+    text-align: end;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+@media all and (min-width: 700px){
+    #App {
+        width: 50%;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    }
 }
